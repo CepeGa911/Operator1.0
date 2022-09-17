@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="32"
+    android:compileSdkVersionCodename="12"
+    package="com.operator.a10"
+    platformBuildVersionCode="32"
+    platformBuildVersionName="12">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:theme="@ref/0x7f0f025d"
+        android:label="@ref/0x7f0e001d"
+        android:icon="@ref/0x7f0c0000"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:fullBackupContent="@ref/0x7f110000"
+        android:roundIcon="@ref/0x7f0c0002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@ref/0x7f110001">
+
+        <activity
+            android:name="com.operator.a10.Activity2"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.operator.a10.MainActivity"
+            android:exported="true"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.operator.a10.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+</manifest>

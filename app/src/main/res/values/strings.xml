@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Оператор 1.0</string>
+    <string name="Logo">Введите номер карты</string>
+    <string name="noouser">Введите номер карты тинькофф или закажите новую карту</string>
+</resources>
